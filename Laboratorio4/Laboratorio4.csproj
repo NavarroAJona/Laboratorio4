@@ -166,6 +166,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Planeta\listadoDePlanetas.cshtml" />
+    <Content Include="Views\Planeta\crearPlaneta.cshtml" />
+    <Content Include="Views\Planeta\editarPlaneta.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
