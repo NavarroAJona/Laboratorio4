@@ -54,7 +54,7 @@ namespace Laboratorio4.Controllers
         [HttpGet]
         public ActionResult editarPlaneta(int? identificador)
         {
-
+            
             ActionResult vista;
             try
             {

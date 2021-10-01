@@ -1,4 +1,5 @@
 ﻿
+
 @{
     ViewBag.Title = "Planetas";
 }
@@ -24,24 +25,24 @@
                 <th> Tipo</th>
 
                 <th> Numero de anillos</th>
-                
+
                 <th> Modificar informacion</th>
             </tr>
 
             @for (int i = 0; i < @ViewBag.planeta.Count; i++)
             {
-        <tr>
-            <td> @ViewBag.planeta[i].id</td>
-            <td>@ViewBag.planeta[i].nombre</td>
+                <tr>
+                    <td> @ViewBag.planeta[i].id</td>
+                    <td>@ViewBag.planeta[i].nombre</td>
 
-            <td> @ViewBag.planeta[i].tipo</td>
+                    <td> @ViewBag.planeta[i].tipo</td>
 
-            <td> @ViewBag.planeta[i].numeroAnillos</td>
+                    <td> @ViewBag.planeta[i].numeroAnillos</td>
 
-            <td>@Html.ActionLink("Modificar info", "editarPlaneta", new { identificador = ViewBag.planeta[i].id }, new { @class = "btn btn alert-info", @onclick = "return confirm('Quiere modificar este planeta?');" })</td>
-    
+                    <td>@Html.ActionLink("Modificar info", "editarPlaneta", new { identificador = ViewBag.planeta[i].id }, new { @class = "btn btn alert-info", @onclick = "return confirm('Quiere modificar este planeta?');" })</td>
 
-        </tr>
+
+                </tr>
             }
     </div>
 
